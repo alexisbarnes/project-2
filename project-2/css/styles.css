@@ -26,6 +26,10 @@ li {
   text-align: center;
 }
 
+#bball-head {
+  color: #048abf;
+}
+
 
 /*-----HOMEPAGE VIDEO-----*/
 /*----url: https://codepen.io/dudleystorey/pen/knqyK--*/
@@ -97,13 +101,13 @@ video {
 }
 
 .wbb-box {
-  float: left;
+  /*float: left;*/
   border-right: 1px dotted #000;
   padding: 5px 25px 0 0;
 }
 
 .mbb-box {
-  float: right;
+  /*float: right;*/
 }
 
 .naismith {
@@ -141,7 +145,7 @@ video {
 
 /*----Popularity---*/
 .crowd {
-  height: 325px;
+  height: 305px;
   width: 1100px;
 }
 
@@ -163,6 +167,7 @@ video {
 
 .pro-head-box {
   text-align: center;
+  color: #048abf;
 }
 
 /*--QUIZ--*/
@@ -183,7 +188,7 @@ body {
     padding: 0.25em;
     max-width: 650px;
     margin: 1em auto;
-    top: 30%;
+    top: 10%;
     position: relative;
 }
 
