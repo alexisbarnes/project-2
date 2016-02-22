@@ -10,8 +10,16 @@ h1, h2 {
   font-family: 'Noto Serif', serif;
   color: #000;
   text-align: center;
+  padding: 0 0 15px 0;
 
+}
 
+ul {
+  list-style-image: url('../photos/bball-icon.png');
+}
+
+li {
+  padding: 5px 0 0 0;
 }
 
 #page-title {
@@ -58,17 +66,30 @@ video {
 
 #title-1 {
   text-align: center;
-  color: #fff;
+  color:  #fff;
   z-index: 100;
   opacity: 0.8;
+  top: 50%;
+  position: relative;
 }
 
 #title-2 {
   text-align: center;
-  color: #fff;
+  color:  #fff;
   z-index: 100;
   opacity: 0.8;
+  top: 50%;
+  position: relative;
+
 }
+
+/*.home-box {
+  background-color: #7BAFD4;
+  opacity: 0.7;
+  z-index: 90;
+  top: 70%;
+  position: relative;
+}*/
 
 /*-----History page-----*/
 .small-hist {
@@ -90,10 +111,12 @@ video {
   width: 100px;
   height: 100px;
   display: inline-block;
+  border-radius: 50px;
 }
 
 .small-hist {
   display: inline-block;
+  font-size: 1.2em;
 }
 
 .naismith-info {
@@ -108,21 +131,38 @@ video {
   width: 139px;
 }
 
+.wbb-style-graphic {
+  text-align: center;
+}
+
+.mbb-style-graphic {
+  text-align: center;
+}
+
 /*----Popularity---*/
 .crowd {
-  height: 335px;
+  height: 325px;
   width: 1100px;
 }
 
 /*----GOING PRO---*/
 .wnba {
-  height: 200px;
-  width: 100px;
+  height: 30px;
+  width: 20px;
 }
 
 .nba {
-  height: 200px;
-  width: 100px;
+  height: 70px;
+  width: 40px;
+}
+
+#pro-head {
+  display:inline-block;
+  text-align: center;
+}
+
+.pro-head-box {
+  text-align: center;
 }
 
 /*--QUIZ--*/
@@ -143,6 +183,8 @@ body {
     padding: 0.25em;
     max-width: 650px;
     margin: 1em auto;
+    top: 30%;
+    position: relative;
 }
 
 .quiz-container a {
