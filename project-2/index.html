@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="css/onepage-scroll.css" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="https://raw.githubusercontent.com/jchamill/jquery-quiz/master/src/jquery.quiz.css" />
-
+  <link rel="stylesheet" href="css/animations.css">
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
@@ -31,6 +31,10 @@
   <script src="js/jquery.onepage-scroll.js"></script>
   <script src="http://jchamill.github.io/jquery-quiz/jquery.quiz-min.js"></script>
 
+
+  <!--<script src="js/wow.min.js"></script>
+  <script src="js/noframework.waypoints.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>-->
 
 <script>
 $(document).ready(function(){
@@ -92,9 +96,23 @@ $(document).ready(function(){
       }
     ]
   });
+
+  $(window).scroll(function() {
+		$('#animatedElement').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("slideUp");
+			}
+		});
+	});
+
 });
 
 </script>
+
+
 
 </head>
 
@@ -117,7 +135,8 @@ $(document).ready(function(){
     <h1 id="page-title">Brief History</h1>
   </div>
   <div class="naismith-info col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    <img src="photos/naismith.jpg" alt="James Naismith" class="naismith">
+    <div id="object" class="fadeIn">
+    <img src="photos/naismith.jpg" alt="James Naismith" id="naismith"></div>
   <p class="small-hist">1891: James Naismith invented the game of basketball.</p>
   </div>
 
@@ -129,14 +148,14 @@ $(document).ready(function(){
     <div class="wbb-box">
       <h2 id="bball-head">Women's Basketball</h2>
       <ul>
-        <li>1892: Senda Berenson organized the first women's team at Smith College.</li>
-        <li>1901: Spalding established women's basketball rules, which Senda Berenson edited.</li>
-        <li>1955: The Pan-American games included women's basketball.</li>
-        <li>1972: Title IX passed, and federally funded schools had to fund women's sports.</li>
-        <li>1976: Women's basketball became an olympic sport</li>
-        <li>1981: The NCAA announced women's basketball tournaments. The first women's Final Four was held.</li>
-        <li>1996: The NBA established the WNBA.</li>
-        <li>1997: The first WNBA game was played</li>
+        <li><b>1892</b>: Senda Berenson organized the first women's team at Smith College.</li>
+        <li><b>1901</b>: Spalding established women's basketball rules, which Senda Berenson edited.</li>
+        <li><b>1955</b>: The Pan-American games included women's basketball.</li>
+        <li><b>1972</b>: Title IX passed, and federally funded schools had to fund women's sports.</li>
+        <li><b>1976</b>: Women's basketball became an olympic sport</li>
+        <li><b>1981</b>: The NCAA announced women's basketball tournaments. The first women's Final Four was held.</li>
+        <li><b>1996</b>: The NBA established the WNBA.</li>
+        <li><b>1997</b>: The first WNBA game was played</li>
       </ul>
     </div>
   </div>
@@ -145,12 +164,12 @@ $(document).ready(function(){
     <div class="mbb-box">
       <h2 id="bball-head">Men's Basketball</h2>
       <ul>
-        <li>1892: The first public game was played at the School for Christian Workers.</li>
-        <li>1895: Minnesota State School of Agriculture and Hamilton College played the first intercollegiate game.</li>
-        <li>1936: Basketball became an official olympic sport. The Olympics were held in Berlin, Germany.</li>
-        <li>1940: The first televised basketball games were played</li>
-        <li>1946: The Basketball Association of America(BAA) was founded.</li>
-        <li>1949: Six teams from the NBL joined the BAA and formed the National Basketball Assocation (NBA).</li>
+        <li><b>1892</b>: The first public game was played at the School for Christian Workers.</li>
+        <li><b>1895</b>: Minnesota State School of Agriculture and Hamilton College played the first intercollegiate game.</li>
+        <li><b>1936</b>: Basketball became an official olympic sport. The Olympics were held in Berlin, Germany.</li>
+        <li><b>1940</b>: The first televised basketball games were played</li>
+        <li><b>1946</b>: The Basketball Association of America(BAA) was founded.</li>
+        <li><b>1949</b>: Six teams from the NBL joined the BAA and formed the National Basketball Assocation (NBA).</li>
     </div>
   </div>
 </section>
@@ -166,8 +185,8 @@ $(document).ready(function(){
       <div class="wbb-box">
         <h2 id="bball-head">Women's Basketball</h2>
         <ul>
-          <li>Women's games are typically lower scoring (with the exception of a few teams such as <a href="#">UConn</a>).</li>
-          <li>Very few women dunk. There are a couple who dunk like <a href="#">Lisa Leslie</a> and <a href="#">Brittney Griner</a>.</li>
+          <li>Women's games are typically lower scoring (with the exception of a few teams such as <a href="http://espn.go.com/womens-college-basketball/team/schedule/_/id/41/connecticut-huskies" target="_blank">University of Connecticut's women's team</a>).</li>
+          <li>Very few women dunk. There are a couple who dunk like <a href="https://www.youtube.com/watch?v=U7Fyfyt6Uz4" target="_blank">Lisa Leslie</a> and <a href="https://www.youtube.com/watch?v=IVTWv1L00gs" target="_blank">Brittney Griner</a>.</li>
           <li>The game is a little bit quicker in college because of the 30-second shot clock and four 10-minute quarters.</li>
         </ul>
     <div class="wbb-style-graphic">
@@ -270,16 +289,13 @@ $(document).ready(function(){
       </div>
     </div>
 
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-      <div class="pro-graphic"></div>
-      <p="extra-txt">In 2015-16, only five NBA players make less than the WNBA max salary. Only one below the WNBA rookie salary.</p>
-    </div>
   </div>
 </section>
 
 <!--quiz-->
 <section>
   <div class="container">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <div id="quiz">
       <div id="quiz-header">
         <h1>What did you learn?</h1>
@@ -289,6 +305,7 @@ $(document).ready(function(){
         <p><a href="#" id="quiz-start-btn" class="quiz-button">Start</a></p>
       </div>
     </div>
+  </div>
   </div>
 </section>
 
@@ -313,7 +330,7 @@ $(document).ready(function(){
     </div>
   </div>
 
-  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
     <div class="mbb-box">
       <ul>
         <li><a href="https://www.flickr.com/photos/jblmpao/16924006536" target="_blank"> James Naismith photo</a></li>
@@ -323,7 +340,10 @@ $(document).ready(function(){
         <li><a href="http://stats.nba.com/" target="_blank">NBA Logo</a></lil>
           <li><a href="http://hoopshype.com/2015/10/12/whats-the-minimum-nba-salary/" target="_blank">What's the minimum NBA salary?</a></li>
           <li><a href="http://hoopshype.com/salaries/players/" target="_blank">NBA Player Salaries</a></li>
+          <li>Thank you <a href="http://www.goheels.com/ViewArticle.dbml?DB_OEM_ID=3350&ATCLID=209635022&SITE=UNC&DB_OEM_ID=3350" target="_blank">Jon Leggette</a> for the UNC men's basketball clips.</li>
+        </ul>
         </div>
+
       </div>
 
 </div>
@@ -332,8 +352,6 @@ $(document).ready(function(){
 
 
 </div><!--main closing div-->
-
-
 
 
 

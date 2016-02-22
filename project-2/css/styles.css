@@ -22,6 +22,17 @@ li {
   padding: 5px 0 0 0;
 }
 
+a {
+  text-decoration: none;
+  color: #2d4473;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #048abf;
+}
+
+
 #page-title {
   text-align: center;
 }
@@ -110,12 +121,16 @@ video {
   /*float: right;*/
 }
 
-.naismith {
+#naismith {
   text-align: center;
   width: 100px;
   height: 100px;
   display: inline-block;
   border-radius: 50px;
+}
+
+#object{
+	visibility: hidden;
 }
 
 .small-hist {
@@ -153,11 +168,13 @@ video {
 .wnba {
   height: 30px;
   width: 20px;
+  margin: -10px 4px 0 0;
 }
 
 .nba {
   height: 70px;
   width: 40px;
+  margin: -10px -5px 0 -15px;
 }
 
 #pro-head {
