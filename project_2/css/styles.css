@@ -1,0 +1,294 @@
+@charset "UTF-8";
+
+/*------GLOBAL STYLES-----*/
+body {
+  font-family: 'Droid Sans', sans-serif;
+  background-color: #f2c8a2;
+}
+
+h1, h2 {
+  font-family: 'Noto Serif', serif;
+  color: #000;
+  text-align: center;
+  padding: 0 0 15px 0;
+
+}
+
+ul {
+  list-style-image: url('../photos/bball-icon.png');
+}
+
+li {
+  padding: 5px 0 0 0;
+}
+
+a {
+  text-decoration: none;
+  color: #2d4473;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #048abf;
+}
+
+
+#page-title {
+  text-align: center;
+}
+
+#bball-head {
+  color: #048abf;
+}
+
+
+/*-----HOMEPAGE VIDEO-----*/
+/*----url: https://codepen.io/dudleystorey/pen/knqyK--*/
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  max-height: 560px;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background: #f2c8a2;
+  background-size: cover;
+  transition: 1s opacity;
+}
+
+.stopfade {
+  opacity: .5;
+}
+
+/*---HOME PAGE STYLING---*/
+/*.box-1 {
+  height: 100px;
+  color: #048abf;
+  z-index: 100;
+  opacity: 0.8;
+}
+
+.box-2 {
+  height: 100px;
+  color: #048abf;
+  z-index: 100;
+  opacity: 0.8;
+}*/
+
+#title-1 {
+  text-align: center;
+  color:  #fff;
+  z-index: 100;
+  opacity: 0.8;
+  top: 50%;
+  position: relative;
+}
+
+#title-2 {
+  text-align: center;
+  color:  #fff;
+  z-index: 100;
+  opacity: 0.8;
+  top: 50%;
+  position: relative;
+
+}
+
+/*.home-box {
+  background-color: #7BAFD4;
+  opacity: 0.7;
+  z-index: 90;
+  top: 70%;
+  position: relative;
+}*/
+
+/*-----History page-----*/
+.small-hist {
+  text-align: center;
+}
+
+.wbb-box {
+  /*float: left;*/
+  border-right: 1px dotted #000;
+  padding: 5px 25px 0 0;
+}
+
+.mbb-box {
+  /*float: right;*/
+}
+
+#naismith {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  border-radius: 50px;
+}
+
+#object {
+	visibility: hidden;
+}
+
+.small-hist {
+  display: inline-block;
+  font-size: 1.2em;
+}
+
+.naismith-info {
+  text-align: center;
+  padding: 0 0 20px 0;
+}
+
+
+/*----STYLE OF PLAY----*/
+.mbb-img {
+  height: 239px;
+  width: 139px;
+}
+
+.wbb-style-graphic {
+  text-align: center;
+}
+
+.mbb-style-graphic {
+  text-align: center;
+}
+
+/*----Popularity---*/
+.crowd {
+  height: 305px;
+  width: 1100px;
+}
+
+/*----GOING PRO---*/
+.wnba {
+  height: 30px;
+  width: 20px;
+  margin: -10px 4px 0 0;
+}
+
+.nba {
+  height: 70px;
+  width: 40px;
+  margin: -10px -5px 0 -15px;
+}
+
+#pro-head {
+  display:inline-block;
+  text-align: center;
+}
+
+.pro-head-box {
+  text-align: center;
+  color: #048abf;
+}
+
+/*--QUIZ--*/
+body {
+  background: #f2c8a2;
+  color: #000;
+}
+#quiz-header {
+  color: #048abf;
+}
+.faded {
+  color: #333;
+}
+#quiz-counter {
+  color: #048abf;
+}
+.quiz-container {
+    padding: 0.25em;
+    max-width: 650px;
+    margin: 1em auto;
+    top: 10%;
+    position: relative;
+}
+
+.quiz-container a {
+    text-decoration: none;
+    color: #333;
+}
+
+#quiz-header,
+#quiz-start-screen,
+#quiz-results-screen,
+#quiz-counter {
+    text-align: center;
+}
+
+.question {
+    font-size: 1.25em;
+}
+
+.answers {
+    list-style: none;
+    padding: 0;
+}
+
+.answers a {
+    display: block;
+    padding: 0.5em 1em;
+    margin-bottom: 0.5em;
+    background: #f2913d;
+}
+
+.answers a.correct {
+    background: #090;
+}
+.answers a.incorrect {
+    background: #c00;
+}
+
+.answers a.correct,
+.answers a.incorrect {
+    color: #fff;
+}
+
+#quiz-controls {
+    background: #048abf;
+    color: #000;
+    padding: 0.25em 0.5em 0.5em;
+    text-align: center;
+}
+
+#quiz-response {}
+#quiz-results {
+    font-size: 1.25em;
+}
+
+#quiz-buttons a,
+.quiz-container .quiz-button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background: #048abf;
+    color: #fff;
+}
+#quiz-buttons a {
+    background: #fff;
+    color: #333;
+}
+
+/* Quiz State Overrides */
+
+.quiz-results-state #quiz-controls {
+    background: none;
+    padding: 0;
+}
+.quiz-results-state #quiz-buttons a {
+    background: #88449a;
+    color: #fff;
+}
+
+
+
+/*----MEDIA QUERY---*/
+@media screen and (max-width: 992px){
+  .wbb-box {
+    border-right: none;
+  }
+}

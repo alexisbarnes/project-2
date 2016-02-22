@@ -1,0 +1,376 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--GOOGLE FONT-->
+<link href='https://fonts.googleapis.com/css?family=Droid+Sans|Noto+Serif' rel='stylesheet' type='text/css'>
+
+<!-- Latest compiled and minified CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Optional theme-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>-->
+
+  <title>Project 2</title>
+
+
+  <link rel="stylesheet" href="css/onepage-scroll.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://raw.githubusercontent.com/jchamill/jquery-quiz/master/src/jquery.quiz.css" />
+  <link rel="stylesheet" href="css/animations.css">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="js/jquery.onepage-scroll.min.js"></script>
+  <script src="js/jquery.onepage-scroll.js"></script>
+  <script src="http://jchamill.github.io/jquery-quiz/jquery.quiz-min.js"></script>
+
+
+  <!--<script src="js/wow.min.js"></script>
+  <script src="js/noframework.waypoints.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>-->
+
+<script>
+$(document).ready(function(){
+  $(".main").onepage_scroll({
+    sectionContainer: "section",
+    responsiveFallback: 600,
+    loop: true
+  });
+    
+	
+       //afterMove: function(index) {
+      //console.log("scroll element")
+      //console.log(index);
+      //if (index == 2) {
+        //console.log("animating the image for second slide.");
+      
+      //$('#object').addClass("fadeIn");
+		
+   
+      //}
+    //}
+
+  
+
+    
+
+  $('#quiz').quiz({
+    //resultsScreen: '#results-screen',
+    //counter: false,
+    //homeButton: '#custom-home',
+    counterFormat: 'Question %current of %total',
+    questions: [
+      {
+        'q': 'What year did women\'s basketball become an official olympic sport?',
+        'options': [
+          '1972',
+          '1996',
+          '1976',
+          '1955'
+        ],
+        'correctIndex': 2,
+        'correctResponse': 'Correct! Women\'s basketball became an official sport in 1976.',
+        'incorrectResponse': 'Sorry, that\'s incorrect.'
+      },
+      {
+        'q': 'In college, men\'s basketball averages 2 more points than women.',
+        'options': [
+          'True',
+          'False'
+        ],
+        'correctIndex': 1,
+        'correctResponse': 'Correct! Men average 5 more points than women.',
+        'incorrectResponse': 'Sorry, wrong answer.'
+      },
+      {
+        'q': 'The University of Tennessee\'s men\'s team has a higher attendance than the women\'s team.',
+        'options': [
+          'True',
+          'False'
+        ],
+        'correctIndex': 1,
+        'correctResponse': 'Exactly! The women\'s team is more poppin\' than the men\'s team.',
+        'incorrectResponse': 'Incorrect! There are women\'s basketbal teams that are more popular than the men\'s.'
+      },
+      {
+        'q': 'In 2015-16 season, what is the rookie minimum salary in the NBA?',
+        'options': [
+          '$95,000',
+          '$25,000,000',
+          '$34,500',
+          '$523,093'
+        ],
+        'correctIndex': 3,
+        'correctResponse': 'Correct!',
+        'incorrectResponse': 'Wrong!'
+      }
+    ]
+  });
+
+  
+
+});
+
+</script>
+
+
+
+
+</head>
+
+<body>
+<div class="main">
+<!---home-->
+<section>
+  <video autoplay poster="video/mbb-wbb-2.mp4" id="big-vid" loop>
+  <source src="video/mbb-wbb-2.mp4" type="video/mp4">
+  </video>
+    <h1 id="title-1">The Basketball Imbalance:</h1>
+    <h2 id="title-2">Men's Basketball vs. Women's Basketball</h2>
+
+</section>
+
+<!--history-->
+<section>
+  <div class="container">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <h1 id="page-title">Brief History</h1>
+  </div>
+  <div class="naismith-info col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div id="object">
+      <img src="photos/naismith.jpg" alt="James Naismith" id="naismith">
+    </div>
+  <p class="small-hist">1891: James Naismith invented the game of basketball.</p>
+  </div>
+
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+  </div>
+
+  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <div class="wbb-box">
+      <h2 id="bball-head">Women's Basketball</h2>
+      <ul>
+        <li><b>1892</b>: Senda Berenson organized the first women's team at Smith College.</li>
+        <li><b>1901</b>: Spalding established women's basketball rules, which Senda Berenson edited.</li>
+        <li><b>1955</b>: The Pan-American games included women's basketball.</li>
+        <li><b>1972</b>: Title IX passed, and federally funded schools had to fund women's sports.</li>
+        <li><b>1976</b>: Women's basketball became an olympic sport</li>
+        <li><b>1981</b>: The NCAA announced women's basketball tournaments. The first women's Final Four was held.</li>
+        <li><b>1996</b>: The NBA established the WNBA.</li>
+        <li><b>1997</b>: The first WNBA game was played</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <div class="mbb-box">
+      <h2 id="bball-head">Men's Basketball</h2>
+      <ul>
+        <li><b>1892</b>: The first public game was played at the School for Christian Workers.</li>
+        <li><b>1895</b>: Minnesota State School of Agriculture and Hamilton College played the first intercollegiate game.</li>
+        <li><b>1936</b>: Basketball became an official olympic sport. The Olympics were held in Berlin, Germany.</li>
+        <li><b>1940</b>: The first televised basketball games were played</li>
+        <li><b>1946</b>: The Basketball Association of America(BAA) was founded.</li>
+        <li><b>1949</b>: Six teams from the NBL joined the BAA and formed the National Basketball Assocation (NBA).</li>
+    </div>
+  </div>
+</section>
+
+<!--style of play-->
+<section>
+  <div class="container">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <h1 id="page-title">Style of Play</h1>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="wbb-box">
+        <h2 id="bball-head">Women's Basketball</h2>
+        <ul>
+          <li>Women's games are typically lower scoring (with the exception of a few teams such as <a href="http://espn.go.com/womens-college-basketball/team/schedule/_/id/41/connecticut-huskies" target="_blank">University of Connecticut's women's team</a>).</li>
+          <li>Very few women dunk. There are a couple who dunk like <a href="https://www.youtube.com/watch?v=U7Fyfyt6Uz4" target="_blank">Lisa Leslie</a> and <a href="https://www.youtube.com/watch?v=IVTWv1L00gs" target="_blank">Brittney Griner</a>.</li>
+          <li>The game is a little bit quicker in college because of the 30-second shot clock and four 10-minute quarters.</li>
+        </ul>
+    <div class="wbb-style-graphic">
+      <img src="photos/wbb-img.png" alt="female player">
+    </div>
+      </div>
+    </div>
+
+    <div class="col-log-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="mbb-box">
+        <h2 id="bball-head">Men's Basketball</h2>
+        <ul>
+          <li>Games are usually higher scoring, averaging about five more points per game in college basketball.</li>
+          <li>A lot more dunking.</li>
+          <li>The men's college game consists of a 35-second shot clock and two 20-minute halves.</li>
+        </ul>
+
+    <div class="mbb-style-graphic">
+      <img src="photos/mbb-img.png" alt="male player" class="mbb-img">
+    </div>
+      </div>
+    </div>
+</div>
+</section>
+
+<!--popularity-->
+<section id="popularity">
+  <div class="container">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <h1 id="page-title">Popularity</h1>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="wbb-box">
+        <h2 id="bball-head">Women's Basketball</h2>
+        <ul>
+          <li>Women played as long as men, but women's basketball didn't become popular until the mid-80s.</li>
+          <li>There are a few women's basketball programs that are more or just as popular as the men's college basketball program. Tennessee women's team regularly sells out and draws bigger crowds than the men's team. Both UConn's women's and men's teams have sell-out crowds.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="mbb-box">
+        <h2 id="bball-head">Men's Basketball</h2>
+        <ul>
+          <li>College and professional basketball have been mainstream in the United States since the 40s.</li>
+          <li>Attendance and TV ratings are much more higher than women's basketbal. The Ohio State men's team averages more than 15,000 people in attendance per game whereas the women average about 3,510 people per game (year).</li>
+        </ul>
+      </div>
+    </div>
+</div>
+
+<!--<div class="container-fluid">
+    <img src="photos/crowd.png" alt="crowd" class="crowd">
+</div>-->
+</section>
+
+
+<!--going pro-->
+<section>
+  <div class="contaier">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <h1 id="page-title">Going Pro</h1>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="wbb-box">
+        <div class="pro-head-box"><img src="photos/wnba-logo.gif" alt="WNBA logo" class="wnba">
+        <h2 id="pro-head">WNBA</h2></div>
+        <ul>
+          <li>In 2014, the minimum salary in the WNBA was $37,940.</li>
+          <li>The rookie slaray is $34,500.</li>
+          <li>A veteran with over 3 years experience in the league makes a minimum of $50,000.</li>
+          <li>In 2012, the max salary was $105,000.</li>
+          <li>The average overseas salary is $72,000.</li>
+          <li>A seven-month contract starts at $40,000 overseas</li>
+          <li>A key player can make about $600,000 plus incentives overseas.</li>
+          <li>Few players, such as Candace Parker and Diana Taurasi, make $1 million.
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="mbb-box">
+        <div class="pro-head-box"><img src="photos/nba-logo.svg" alt="NBA logo" class="nba"> <h2 id="pro-head">NBA</h2></div>
+        <ul>
+          <li>In the 2015-16 season, the rookie minimum salary is $523,093.</li>
+          <li>With three years of exprience in the league, a player makes $981,348.</li>
+          <li>Top 3 salaries (2015-16):
+            <ol>
+              <li>Kobe Bryant: $25,000,000</li>
+              <li>Joe Johnson: $24,894,863</li>
+              <li>LeBron James: $22,970,500</li>
+            </ol>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!--quiz-->
+<section>
+  <div class="container">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div id="quiz">
+      <div id="quiz-header">
+        <h1>What did you learn?</h1>
+        <p class="faded">Do you know the differences between men's and women's basketball.</p>
+      </div>
+      <div id="quiz-start-screen">
+        <p><a href="#" id="quiz-start-btn" class="quiz-button">Start</a></p>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!--sources-->
+<section>
+  <div class="container">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <h1 id="page-title">Sources</h1>
+    </div>
+
+  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <div class="wbb-box">
+      <ul>
+        <li><a href="http://womenshistory.about.com/od/basketball/a/timeline.htm" target="_blank">History of Women's Basketball in America</a></li>
+        <li><a href="http://www.livestrong.com/article/122406-difference-between-mens-womens/" target="_blanke">Difference Between Men's & Women's Basketball</a></li>
+        <li><a href="http://www.shmoop.com/ncaa/womens-basketball/mens-vs-womens.html" target="_blanke">Men's vs. Women's</a></li>
+        <li><a href="http://www.underconsideration.com/brandnew/archives/wnba_steps_inline.php#.VskMlJMrLUI" target="_blank">WNBA Logo</a></li>
+        <li><a href="http://usatoday30.usatoday.com/sports/basketball/story/2012-05-19/nba-wnba-basketball-salary-disparity/55079608/1" target="_blank">Equal pay? Not on the basketball court</a></li>
+        <li><a href="http://www.altiusdirectory.com/Sports/wnba-salaries.php" target="_blank">WNBA Salaries 2016</a></li>
+        <li><a href="http://espn.go.com/espnw/news-commentary/article/7538075/wnba-players-cash-overseas" target="_blank">WNBA players cash in overseas</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <div class="mbb-box">
+      <ul>
+        <li><a href="https://www.flickr.com/photos/jblmpao/16924006536" target="_blank"> James Naismith photo</a></li>
+        <li><a href="http://www.ncaa.com/news/basketball-men/article/2014-11-29/vanderbilt-lays-claim-true-birthplace-college-basketball" target="_blank">Vanderbilt lays claim true 'birthplace of college basketball'</a></li>
+        <li><a href="http://www.ultimate-youth-basketball-guide.com/history-of-basketball-time-line.html" target="_blank">History of Basketball Time Line</a></li>
+        <li><a href="http://basketball.about.com/od/internationalbasketball/a/Team-Usa-And-Olympic-Basketball-History.htm" target="_blank">Team USA and Olympic Basketball History</a></li>
+        <li><a href="http://stats.nba.com/" target="_blank">NBA Logo</a></lil>
+          <li><a href="http://hoopshype.com/2015/10/12/whats-the-minimum-nba-salary/" target="_blank">What's the minimum NBA salary?</a></li>
+          <li><a href="http://hoopshype.com/salaries/players/" target="_blank">NBA Player Salaries</a></li>
+          <li>Thank you <a href="http://www.goheels.com/ViewArticle.dbml?DB_OEM_ID=3350&ATCLID=209635022&SITE=UNC&DB_OEM_ID=3350" target="_blank">Jon Leggette</a> for the UNC men's basketball clips.</li>
+        </ul>
+        </div>
+
+      </div>
+
+</div>
+</section>
+
+
+
+</div><!--main closing div-->
+
+
+
+
+</body>
+
+
+
+
+
+
+</html>
