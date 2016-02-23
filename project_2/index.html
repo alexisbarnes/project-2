@@ -25,105 +25,13 @@
   <link rel="stylesheet" href="https://raw.githubusercontent.com/jchamill/jquery-quiz/master/src/jquery.quiz.css" />
   <link rel="stylesheet" href="css/animations.css">
 
-
-
-
-  <!--<script src="js/wow.min.js"></script>
-  <script src="js/noframework.waypoints.min.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>-->
-
-<!--
-// //$(document).ready(function(){
-//   //$(".main").onepage_scroll({
-//     sectionContainer: "section",
-//     responsiveFallback: 600,
-//     loop: true
-//   });
-
-
-      // afterMove: function(index) {
-      //console.log("afterMove");
-      //console.log("scroll element");
-      //console.log(index);
-      //if (index == 2) {
-        //console.log("animating the image for second slide.");
-
-      //$('#object').addClass("fadeIn");
-
-
-      //}
-    //}
-
-
-
-
-
-  //$('#quiz').quiz({
-    //resultsScreen: '#results-screen',
-    //counter: false,
-    //homeButton: '#custom-home',
-    //counterFormat: 'Question %current of %total',
-    //questions: [
-      //{
-        //'q': 'What year did women\'s basketball become an official olympic sport?',
-        //'options': [
-          //'1972',
-          //'1996',
-          //'1976',
-          //'1955'
-        //],
-        //'correctIndex': 2,
-        //'correctResponse': 'Correct! Women\'s basketball became an official sport in 1976.',
-        //'incorrectResponse': 'Sorry, that\'s incorrect.'
-      //},
-      //{
-        //'q': 'In college, men\'s basketball averages 2 more points than women.',
-        //'options': [
-          //'True',
-          //'False'
-        //],
-        //'correctIndex': 1,
-        //'correctResponse': 'Correct! Men average 5 more points than women.',
-        //'incorrectResponse': 'Sorry, wrong answer.'
-      //},
-      //{
-        //'q': 'The University of Tennessee\'s men\'s team has a higher attendance than the women\'s team.',
-        //'options': [
-          //'True',
-          //'False'
-        //],
-        //'correctIndex': 1,
-        //'correctResponse': 'Exactly! The women\'s team is more poppin\' than the men\'s team.',
-        //'incorrectResponse': 'Incorrect! There are women\'s basketbal teams that are more popular than the men\'s.'
-      //},
-      //{
-        //'q': 'In 2015-16 season, what is the rookie minimum salary in the NBA?',
-        //'options': [
-          //'$95,000',
-          //'$25,000,000',
-          //'$34,500',
-          //'$523,093'
-        //],
-        //'correctIndex': 3,
-        //'correctResponse': 'Correct!',
-        //'incorrectResponse': 'Wrong!'
-      //}
-    //]
-  //});
-
-//}); -->
-
-
-
-
-
 </head>
 
 <body>
 <div class="main">
 <!---home-->
 <section>
-  <video autoplay poster="video/mbb-wbb-2.mp4" id="big-vid" loop>
+  <video autoplay muted poster="photos/video-clip.png" id="big-vid" loop>
   <source src="video/mbb-wbb-2.mp4" type="video/mp4">
   </video>
     <h1 id="title-1">The Basketball Imbalance:</h1>
@@ -134,6 +42,7 @@
 <!--history-->
 <section>
   <div class="container">
+  <div class="row">
   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <h1 id="page-title">Brief History</h1>
   </div>
@@ -143,12 +52,8 @@
     </div>
   <p class="small-hist">1891: James Naismith invented the game of basketball.</p>
   </div>
-
-  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-  </div>
-
-  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div id="scroll-box">
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
     <div class="wbb-box">
       <h2 id="bball-head">Women's Basketball</h2>
       <ul>
@@ -164,7 +69,7 @@
     </div>
   </div>
 
-  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
     <div class="mbb-box">
       <h2 id="bball-head">Men's Basketball</h2>
       <ul>
@@ -176,11 +81,14 @@
         <li><b>1949</b>: Six teams from the NBL joined the BAA and formed the National Basketball Assocation (NBA).</li>
     </div>
   </div>
+</div>
+</div>
 </section>
 
 <!--style of play-->
 <section>
   <div class="container">
+    <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <h1 id="page-title">Style of Play</h1>
     </div>
@@ -193,7 +101,7 @@
           <li>Very few women dunk. There are a couple who dunk like <a href="https://www.youtube.com/watch?v=U7Fyfyt6Uz4" target="_blank">Lisa Leslie</a> and <a href="https://www.youtube.com/watch?v=IVTWv1L00gs" target="_blank">Brittney Griner</a>.</li>
           <li>The game is a little bit quicker in college because of the 30-second shot clock and four 10-minute quarters.</li>
         </ul>
-    <div id="wbb-graphic" class="wbb-style-graphic">
+    <div id="wbb-graphic" class="wbb-style-graphic hidden-sm hidden-xs">
       <img src="photos/wbb-img.png" alt="female player">
     </div>
       </div>
@@ -208,17 +116,19 @@
           <li>The men's college game consists of a 35-second shot clock and two 20-minute halves.</li>
         </ul>
 
-    <div id="mbb-graphic" class="mbb-style-graphic">
+    <div id="mbb-graphic" class="mbb-style-graphic hidden-sm hidden-xs">
       <img src="photos/mbb-img.png" alt="male player" class="mbb-img">
     </div>
       </div>
     </div>
+</div>
 </div>
 </section>
 
 <!--popularity-->
 <section id="popularity">
   <div class="container">
+    <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <h1 id="page-title">Popularity</h1>
     </div>
@@ -244,13 +154,13 @@
           <li>College and professional basketball have been mainstream in the United States since the 40s.</li>
           <li>Attendance and TV ratings are much more higher than women's basketbal.</li>
             <ol>
-              <li>The Ohio State men's team averages more than 15,000 people in attendance per game whereas the women average about 3,510 people per game (year).</li>
+              <li>The Ohio State men's team averages more than 15,000 people in attendance per game whereas the women average about 3,510 people per game (2015).</li>
             </ol>
         </ul>
       </div>
     </div>
 </div>
-
+</div>
 <!--<div class="container-fluid">
     <img src="photos/crowd.png" alt="crowd" class="crowd">
 </div>-->
@@ -259,7 +169,8 @@
 
 <!--going pro-->
 <section>
-  <div class="contaier">
+  <div class="container">
+    <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <h1 id="page-title">Going Pro</h1>
     </div>
@@ -301,11 +212,13 @@
     </div>
 
   </div>
+</div>
 </section>
 
 <!--quiz-->
 <section>
   <!--<div class="container">
+    <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <div id="quiz">
       <div id="quiz-header">
@@ -317,13 +230,31 @@
       </div>
     </div>
   </div>
+</div>
 </div>-->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div id='container'>
+			<div id='title'>
+				<h1>What did you learn?</h1>
+			</div>
+   			<br/>
+  			<div id='quiz'></div>
+    		<div class='button' id='next'><a href='#'>Next</a></div>
+    		<div class='button' id='prev'><a href='#'>Prev</a></div>
+    		<div class='button' id='start'> <a href='#'>Start Over</a></div>
+    		<!-- <button class='' id='next'>Next</a></button>
+    		<button class='' id='prev'>Prev</a></button>
+    		<button class='' id='start'> Start Over</a></button> -->
+    	</div>
 
 </section>
 
 <!--sources-->
 <section>
   <div class="container">
+    <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <h1 id="page-title">Sources</h1>
     </div>
@@ -347,7 +278,7 @@
       <ul>
         <li><a href="https://www.flickr.com/photos/jblmpao/16924006536" target="_blank"> James Naismith photo</a></li>
         <li><a href="http://www.ncaa.com/news/basketball-men/article/2014-11-29/vanderbilt-lays-claim-true-birthplace-college-basketball" target="_blank">Vanderbilt lays claim true 'birthplace of college basketball'</a></li>
-        <li><a href="http://www.ultimate-youth-basketball-guide.com/history-of-basketball-time-line.html" target="_blank">History of Basketball Time Line</a></li>
+        <li ><a href="http://www.ultimate-youth-basketball-guide.com/history-of-basketball-time-line.html" target="_blank">History of Basketball Time Line</a></li>
         <li><a href="http://basketball.about.com/od/internationalbasketball/a/Team-Usa-And-Olympic-Basketball-History.htm" target="_blank">Team USA and Olympic Basketball History</a></li>
         <li><a href="http://stats.nba.com/" target="_blank">NBA Logo</a></lil>
           <li><a href="http://hoopshype.com/2015/10/12/whats-the-minimum-nba-salary/" target="_blank">What's the minimum NBA salary?</a></li>
@@ -359,6 +290,10 @@
       </div>
 
 </div>
+</div>
+</div>
+</div>
+</div>
 </section>
 
 
@@ -368,7 +303,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="js/jquery.onepage-scroll.js"></script>
 <script src="js/script.js"></script>
-
 
 </body>
 
