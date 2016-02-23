@@ -158,11 +158,20 @@ video {
   text-align: center;
 }
 
+#wbb-graphic {
+  visibility: hidden;
+}
+
+#mbb-graphic {
+  visibility: hidden;
+}
+
 /*----Popularity---*/
-.crowd {
+/*.crowd {
   height: 305px;
   width: 1100px;
-}
+}*/
+
 
 /*----GOING PRO---*/
 .wnba {

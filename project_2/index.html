@@ -26,99 +26,93 @@
   <link rel="stylesheet" href="css/animations.css">
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <script src="js/jquery.onepage-scroll.min.js"></script>
-  <script src="js/jquery.onepage-scroll.js"></script>
-  <script src="http://jchamill.github.io/jquery-quiz/jquery.quiz-min.js"></script>
 
 
   <!--<script src="js/wow.min.js"></script>
   <script src="js/noframework.waypoints.min.js"></script>
   <script src="js/jquery.waypoints.min.js"></script>-->
 
-<script>
-$(document).ready(function(){
-  $(".main").onepage_scroll({
-    sectionContainer: "section",
-    responsiveFallback: 600,
-    loop: true
-  });
-    
-	
-       //afterMove: function(index) {
-      //console.log("scroll element")
+<!--
+// //$(document).ready(function(){
+//   //$(".main").onepage_scroll({
+//     sectionContainer: "section",
+//     responsiveFallback: 600,
+//     loop: true
+//   });
+
+
+      // afterMove: function(index) {
+      //console.log("afterMove");
+      //console.log("scroll element");
       //console.log(index);
       //if (index == 2) {
         //console.log("animating the image for second slide.");
-      
+
       //$('#object').addClass("fadeIn");
-		
-   
+
+
       //}
     //}
 
-  
 
-    
 
-  $('#quiz').quiz({
+
+
+  //$('#quiz').quiz({
     //resultsScreen: '#results-screen',
     //counter: false,
     //homeButton: '#custom-home',
-    counterFormat: 'Question %current of %total',
-    questions: [
-      {
-        'q': 'What year did women\'s basketball become an official olympic sport?',
-        'options': [
-          '1972',
-          '1996',
-          '1976',
-          '1955'
-        ],
-        'correctIndex': 2,
-        'correctResponse': 'Correct! Women\'s basketball became an official sport in 1976.',
-        'incorrectResponse': 'Sorry, that\'s incorrect.'
-      },
-      {
-        'q': 'In college, men\'s basketball averages 2 more points than women.',
-        'options': [
-          'True',
-          'False'
-        ],
-        'correctIndex': 1,
-        'correctResponse': 'Correct! Men average 5 more points than women.',
-        'incorrectResponse': 'Sorry, wrong answer.'
-      },
-      {
-        'q': 'The University of Tennessee\'s men\'s team has a higher attendance than the women\'s team.',
-        'options': [
-          'True',
-          'False'
-        ],
-        'correctIndex': 1,
-        'correctResponse': 'Exactly! The women\'s team is more poppin\' than the men\'s team.',
-        'incorrectResponse': 'Incorrect! There are women\'s basketbal teams that are more popular than the men\'s.'
-      },
-      {
-        'q': 'In 2015-16 season, what is the rookie minimum salary in the NBA?',
-        'options': [
-          '$95,000',
-          '$25,000,000',
-          '$34,500',
-          '$523,093'
-        ],
-        'correctIndex': 3,
-        'correctResponse': 'Correct!',
-        'incorrectResponse': 'Wrong!'
-      }
-    ]
-  });
+    //counterFormat: 'Question %current of %total',
+    //questions: [
+      //{
+        //'q': 'What year did women\'s basketball become an official olympic sport?',
+        //'options': [
+          //'1972',
+          //'1996',
+          //'1976',
+          //'1955'
+        //],
+        //'correctIndex': 2,
+        //'correctResponse': 'Correct! Women\'s basketball became an official sport in 1976.',
+        //'incorrectResponse': 'Sorry, that\'s incorrect.'
+      //},
+      //{
+        //'q': 'In college, men\'s basketball averages 2 more points than women.',
+        //'options': [
+          //'True',
+          //'False'
+        //],
+        //'correctIndex': 1,
+        //'correctResponse': 'Correct! Men average 5 more points than women.',
+        //'incorrectResponse': 'Sorry, wrong answer.'
+      //},
+      //{
+        //'q': 'The University of Tennessee\'s men\'s team has a higher attendance than the women\'s team.',
+        //'options': [
+          //'True',
+          //'False'
+        //],
+        //'correctIndex': 1,
+        //'correctResponse': 'Exactly! The women\'s team is more poppin\' than the men\'s team.',
+        //'incorrectResponse': 'Incorrect! There are women\'s basketbal teams that are more popular than the men\'s.'
+      //},
+      //{
+        //'q': 'In 2015-16 season, what is the rookie minimum salary in the NBA?',
+        //'options': [
+          //'$95,000',
+          //'$25,000,000',
+          //'$34,500',
+          //'$523,093'
+        //],
+        //'correctIndex': 3,
+        //'correctResponse': 'Correct!',
+        //'incorrectResponse': 'Wrong!'
+      //}
+    //]
+  //});
 
-  
+//}); -->
 
-});
-
-</script>
 
 
 
@@ -199,7 +193,7 @@ $(document).ready(function(){
           <li>Very few women dunk. There are a couple who dunk like <a href="https://www.youtube.com/watch?v=U7Fyfyt6Uz4" target="_blank">Lisa Leslie</a> and <a href="https://www.youtube.com/watch?v=IVTWv1L00gs" target="_blank">Brittney Griner</a>.</li>
           <li>The game is a little bit quicker in college because of the 30-second shot clock and four 10-minute quarters.</li>
         </ul>
-    <div class="wbb-style-graphic">
+    <div id="wbb-graphic" class="wbb-style-graphic">
       <img src="photos/wbb-img.png" alt="female player">
     </div>
       </div>
@@ -214,7 +208,7 @@ $(document).ready(function(){
           <li>The men's college game consists of a 35-second shot clock and two 20-minute halves.</li>
         </ul>
 
-    <div class="mbb-style-graphic">
+    <div id="mbb-graphic" class="mbb-style-graphic">
       <img src="photos/mbb-img.png" alt="male player" class="mbb-img">
     </div>
       </div>
@@ -234,7 +228,11 @@ $(document).ready(function(){
         <h2 id="bball-head">Women's Basketball</h2>
         <ul>
           <li>Women played as long as men, but women's basketball didn't become popular until the mid-80s.</li>
-          <li>There are a few women's basketball programs that are more or just as popular as the men's college basketball program. Tennessee women's team regularly sells out and draws bigger crowds than the men's team. Both UConn's women's and men's teams have sell-out crowds.</li>
+          <li>There are a few women's basketball programs that are more or just as popular as the men's college basketball program.</li>
+            <ol>
+              <li>Tennessee women's team regularly sells out and draws bigger crowds than the men's team.</li>
+              <li>Both UConn's women's and men's teams have sell-out crowds.</li>
+            </ol>
         </ul>
       </div>
     </div>
@@ -244,7 +242,10 @@ $(document).ready(function(){
         <h2 id="bball-head">Men's Basketball</h2>
         <ul>
           <li>College and professional basketball have been mainstream in the United States since the 40s.</li>
-          <li>Attendance and TV ratings are much more higher than women's basketbal. The Ohio State men's team averages more than 15,000 people in attendance per game whereas the women average about 3,510 people per game (year).</li>
+          <li>Attendance and TV ratings are much more higher than women's basketbal.</li>
+            <ol>
+              <li>The Ohio State men's team averages more than 15,000 people in attendance per game whereas the women average about 3,510 people per game (year).</li>
+            </ol>
         </ul>
       </div>
     </div>
@@ -304,7 +305,7 @@ $(document).ready(function(){
 
 <!--quiz-->
 <section>
-  <div class="container">
+  <!--<div class="container">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <div id="quiz">
       <div id="quiz-header">
@@ -316,7 +317,8 @@ $(document).ready(function(){
       </div>
     </div>
   </div>
-  </div>
+</div>-->
+
 </section>
 
 <!--sources-->
@@ -363,7 +365,9 @@ $(document).ready(function(){
 
 </div><!--main closing div-->
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="js/jquery.onepage-scroll.js"></script>
+<script src="js/script.js"></script>
 
 
 </body>
